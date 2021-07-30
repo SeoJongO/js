@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<body>
+
+	<script type="text/javascript">
+		var guestbookVo = {
+			name : "황일영",
+			password : "1234",
+			content : "안녕하세요",
+			showInfo : function() {
+				console.log(this.name + "," + 
+							this.password + "," + 
+							this.content);
+			}
+		};
+		
+		guestbookVo.showInfo();
+		console.log(guestbookVo.name);
+		console.log(guestbookVo.password);
+		console.log(guestbookVo.content);
+		
+		var teacher = guestbookVo.name;
+		console.log(teacher);
+		
+		var teacher2 = guestbookVo["name"];
+		console.log(teacher2);
+		
+		console.log("======================================")
+		
+		var person01 = {
+				name: "황일영",
+				hp: "010-1111-1111",
+				company: "02-1111-1111"
+		}
+		
+		var person02 = {
+				name: "이효리",
+				hp: "010-2222-2222",
+				company: "02-2222-2222"
+		}
+		
+		var person03 = {
+				name: "정우성",
+				hp: "010-3333-3333",
+				company: "02-3333-3333"
+		}
+		
+		var person_array = [person01, person02, person03];
+		
+		console.log(person_array);
+		console.log(person_array[0]);
+		console.log(person_array[1]);
+		console.log(person_array[2]);
+		
+		var person_array2 = [];
+		person_array2[0] = person01;
+		person_array2[1] = person02;
+		
+		console.log(person_array2);
+		
+		person_array2.push(person03);
+		console.log(person_array2);
+		
+		person_array2.pop();
+		console.log(person_array2);
+		
+		for(var i=0; i<person_array.length; i++) {
+			console.log(person_array[i].name+" "+person_array[i].hp+" "+person_array[i].company);
+		}
+	</script>
+
+</body>
+
+
+</html>

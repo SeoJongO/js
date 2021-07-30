@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<body>
+
+	<script type="text/javascript">
+		/*
+		var names = "global";
+
+		function checkscope() {
+			var names = "local";
+			console.log(names);
+		}
+
+		checkscope();
+		
+		console.log(names);
+		 */
+
+		var names = "global";
+
+		function checkscope() {
+			name2 = "로컬";
+			names = "local";
+			console.log(names);
+		}
+
+		checkscope();
+
+		console.log(names);
+		console.log(name2);
+	</script>
+
+</body>
+
+
+</html>

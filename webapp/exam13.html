@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>이벤트</h1>
+
+	<h2>h2태그_1</h2>
+	<h2>h2태그_2</h2>
+	<h2>h2태그_3</h2>
+
+	<h3 class="tagh3">h3태그_1</h3>
+	<h3 class="tagh3">h3태그_2</h3>
+	<h3 class="tagh3">네이버</h3>
+	<h3 class="tagh3">다음</h3>
+	
+	<div>
+		<button id="btn">자바스크립트 테스트 버튼</button>
+		<p id="display">이름출력영역</p>
+	</div>
+
+	<script type="text/javascript">
+		window.onload = function() {
+			var testButton = document.getElementById("btn");
+			var testArea = document.getElementById("display");
+			var h1 = document.getElementsByTagName("h1");
+			var h2 = document.getElementsByTagName("h2");
+			var h3 = document.getElementsByClassName("tagh3");
+			
+			console.log(testButton);
+			console.log(testArea);
+			console.log(h1);
+			console.log(h2);
+			console.log(h3);
+			
+			testButton.onclick = function() {
+				testArea.innerHTML = "홍길동";
+			}
+			
+			h2[1].onclick = function() {
+				testArea.innerHTML = "유재석";
+			}
+			
+			h3[2].onclick = function() {
+				h1[0].innerHTML = "http://www.naver.com";
+			}
+			
+			h3[3].onclick = function() {
+				h1[0].innerHTML = "http://www.daum.net";
+			}
+			
+		}
+	</script>
+
+</body>
+
+</html>
